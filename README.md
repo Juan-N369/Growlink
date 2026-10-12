@@ -10,7 +10,7 @@ anclado a un catálogo cerrado de habilidades y verificado por un Validador de S
 | `datos/` | Catálogo, esquema JSON de salida, y ejemplos de perfil y roadmap |
 | `herramientas/` | Script en Python que verifica la consistencia de los datos |
 | `backend/` | Proyecto Spring Boot: Validador de Salida (reglas R1 a R7) y sus pruebas |
-| `prototipo/` | Prototipo de interfaz navegable (HTML, CSS y JavaScript) |
+| `prototipo/` | Prototipo de interfaz navegable (HTML, CSS y JavaScript) desarrollado con asistencia de Claude (Anthropic)|
 | `docs/` | Diagramas de arquitectura y prototipo en papel |
 
 ## Cómo ejecutar
@@ -27,6 +27,10 @@ mvn test
 ```
 
 Prototipo: abrir `prototipo/index.html` en el navegador. Los resultados son predeterminados.
+
+## Uso de IA
+
+El código del prototipo de interfaz (prototipo/) se desarrolló con asistencia de Claude (Anthropic, 2026), a partir del prototipo en papel y la descripción elaborados por el equipo. El equipo lo revisó, lo probó y lo adaptó.
 
 ## Estado (Hito 2)
 
