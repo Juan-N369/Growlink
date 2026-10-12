@@ -1,0 +1,29 @@
+{
+  "habilidades": [
+    {"id": "java_basico", "nombre": "Java básico", "nivel": "basico", "prerrequisitos": []},
+    {"id": "poo", "nombre": "Programación orientada a objetos", "nivel": "basico", "prerrequisitos": ["java_basico"]},
+    {"id": "git", "nombre": "Control de versiones con Git", "nivel": "basico", "prerrequisitos": []},
+    {"id": "sql_basico", "nombre": "SQL básico", "nivel": "basico", "prerrequisitos": []},
+    {"id": "estructuras_datos", "nombre": "Estructuras de datos", "nivel": "basico", "prerrequisitos": ["java_basico"]},
+    {"id": "linux_cli", "nombre": "Línea de comandos en Linux", "nivel": "basico", "prerrequisitos": []},
+    {"id": "http_rest_conceptos", "nombre": "Conceptos de HTTP y REST", "nivel": "basico", "prerrequisitos": []},
+    {"id": "spring_boot", "nombre": "Spring Boot", "nivel": "intermedio", "prerrequisitos": ["java_basico", "poo"]},
+    {"id": "apis_rest", "nombre": "Construcción de APIs REST", "nivel": "intermedio", "prerrequisitos": ["spring_boot", "http_rest_conceptos"]},
+    {"id": "jpa_hibernate", "nombre": "Persistencia con JPA/Hibernate", "nivel": "intermedio", "prerrequisitos": ["sql_basico", "spring_boot"]},
+    {"id": "testing_unitario", "nombre": "Pruebas unitarias", "nivel": "intermedio", "prerrequisitos": ["java_basico"]},
+    {"id": "docker", "nombre": "Contenedores con Docker", "nivel": "intermedio", "prerrequisitos": ["linux_cli"]},
+    {"id": "seguridad_basica", "nombre": "Seguridad básica en APIs", "nivel": "intermedio", "prerrequisitos": ["apis_rest"]},
+    {"id": "maven_gradle", "nombre": "Maven o Gradle", "nivel": "intermedio", "prerrequisitos": ["java_basico"]},
+    {"id": "microservicios", "nombre": "Arquitectura de microservicios", "nivel": "avanzado", "prerrequisitos": ["apis_rest", "docker"]},
+    {"id": "mensajeria", "nombre": "Mensajería asíncrona", "nivel": "avanzado", "prerrequisitos": ["microservicios"]},
+    {"id": "ci_cd", "nombre": "Integración y despliegue continuo", "nivel": "avanzado", "prerrequisitos": ["git", "docker", "testing_unitario"]},
+    {"id": "kubernetes", "nombre": "Orquestación con Kubernetes", "nivel": "avanzado", "prerrequisitos": ["docker"]},
+    {"id": "observabilidad", "nombre": "Observabilidad y monitoreo", "nivel": "avanzado", "prerrequisitos": ["microservicios"]},
+    {"id": "cloud_basico", "nombre": "Fundamentos de nube", "nivel": "avanzado", "prerrequisitos": ["docker"]}
+  ],
+  "metas": [
+    {"id": "backend_junior", "nombre": "Desarrollador backend junior", "habilidades_clave": ["java_basico", "poo", "git", "sql_basico", "spring_boot", "apis_rest"]},
+    {"id": "backend_microservicios", "nombre": "Backend con microservicios", "habilidades_clave": ["spring_boot", "apis_rest", "docker", "microservicios", "mensajeria"]},
+    {"id": "backend_cloud", "nombre": "Backend orientado a nube", "habilidades_clave": ["docker", "ci_cd", "kubernetes", "cloud_basico", "observabilidad"]}
+  ]
+}

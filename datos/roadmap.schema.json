@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "roadmap": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "orden": {"type": "integer"},
+          "habilidad_id": {"type": "string"},
+          "justificacion": {"type": "string"}
+        },
+        "required": ["orden", "habilidad_id", "justificacion"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["roadmap"],
+  "additionalProperties": false
+}

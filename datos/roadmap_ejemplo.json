@@ -1,0 +1,12 @@
+{
+  "roadmap": [
+    {"orden": 1, "habilidad_id": "poo", "justificacion": "Base necesaria para Spring Boot."},
+    {"orden": 2, "habilidad_id": "spring_boot", "justificacion": "Framework principal del backend."},
+    {"orden": 3, "habilidad_id": "http_rest_conceptos", "justificacion": "Fundamento de las APIs."},
+    {"orden": 4, "habilidad_id": "apis_rest", "justificacion": "Requisito directo de microservicios."},
+    {"orden": 5, "habilidad_id": "linux_cli", "justificacion": "Requisito para trabajar con Docker."},
+    {"orden": 6, "habilidad_id": "docker", "justificacion": "Los microservicios se empaquetan en contenedores."},
+    {"orden": 7, "habilidad_id": "microservicios", "justificacion": "Meta principal del usuario."},
+    {"orden": 8, "habilidad_id": "mensajeria", "justificacion": "Comunicación asíncrona entre servicios."}
+  ]
+}
