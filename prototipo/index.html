@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrowLink · Prototipo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- GrowLink · Prototipo navegable. Desarrollado con asistencia de Claude (Anthropic)
+     a partir del diseño y la descripción del equipo; revisado y probado por el equipo. -->
+<div class="marca"><span class="punto"></span>GrowLink</div>
+
+<!-- Pantalla 1: meta y perfil -->
+<section id="vista-meta" class="vista activa">
+  <main class="chat">
+    <h1>¿Cuál es tu meta?</h1>
+    <div class="caja">
+      <label for="meta">Meta</label>
+      <select id="meta"><option value="">Elige tu meta…</option></select>
+
+      <label for="fecha">Fecha objetivo (opcional)</label>
+      <input type="date" id="fecha">
+
+      <div class="fila">
+        <div>
+          <label for="estudios">Nivel de estudios</label>
+          <select id="estudios">
+            <option>Bachiller</option>
+            <option>Técnico</option>
+            <option selected>Universitario en curso</option>
+            <option>Universitario titulado</option>
+          </select>
+        </div>
+        <div>
+          <label for="experiencia">Experiencia</label>
+          <select id="experiencia">
+            <option>Ninguna</option>
+            <option selected>Menos de 1 año</option>
+            <option>1 a 3 años</option>
+            <option>Más de 3 años</option>
+          </select>
+        </div>
+      </div>
+
+      <span class="etq">Habilidades que ya dominas</span>
+      <div id="chips" class="chips"></div>
+
+      <button id="btn-generar" class="btn" disabled>Generar roadmap</button>
+    </div>
+    <label class="demo"><input type="checkbox" id="simular-error"> Simular error (demo)</label>
+    <p class="nota">Prototipo navegable: los resultados son predeterminados.</p>
+  </main>
+</section>
+
+<!-- Carga -->
+<section id="vista-carga" class="vista">
+  <div class="centro">
+    <div class="spinner"></div>
+    <h2 id="msg-carga">Generando con Claude…</h2>
+    <p>Esto toma unos segundos.</p>
+  </div>
+</section>
+
+<!-- Error controlado -->
+<section id="vista-error" class="vista">
+  <div class="centro">
+    <h2>No pudimos generar un roadmap válido</h2>
+    <p>Se agotaron los 2 intentos sin obtener una respuesta que cumpla las reglas de validación.
+       Por seguridad no se muestra ningún roadmap parcial.</p>
+    <p style="font-size:.8rem">Error 422</p>
+    <button id="btn-reintentar" class="btn">Intentar de nuevo</button>
+  </div>
+</section>
+
+<!-- Pantalla 2: roadmap -->
+<section id="vista-roadmap" class="vista">
+  <div class="cabecera">
+    <div class="in">
+      <div class="izq">
+        <h2 id="titulo-meta"></h2>
+        <div class="fecha" id="texto-fecha"></div>
+        <div class="barra">
+          <div class="relleno" id="relleno"></div>
+          <div class="pct" id="pct">0%</div>
+        </div>
+      </div>
+      <div class="der">
+        <button id="btn-actualizar" class="btn">Actualizar progreso</button>
+        <span class="pend" id="pend"></span>
+      </div>
+    </div>
+  </div>
+  <div class="volver"><button id="btn-volver" class="btn sec">← Nuevo roadmap</button></div>
+  <div class="linea" id="linea"></div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
