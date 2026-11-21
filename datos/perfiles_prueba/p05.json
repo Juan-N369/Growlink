@@ -1,0 +1,10 @@
+{
+  "nivel_estudios": "tecnico",
+  "anios_experiencia": "1_a_3",
+  "habilidades_actuales": [
+    "java_basico",
+    "sql_basico",
+    "git"
+  ],
+  "meta": "backend_junior"
+}

@@ -1,0 +1,14 @@
+{
+  "nivel_estudios": "tecnico",
+  "anios_experiencia": "1_a_3",
+  "habilidades_actuales": [
+    "java_basico",
+    "poo",
+    "sql_basico",
+    "git",
+    "spring_boot",
+    "jpa_hibernate",
+    "maven_gradle"
+  ],
+  "meta": "backend_microservicios"
+}

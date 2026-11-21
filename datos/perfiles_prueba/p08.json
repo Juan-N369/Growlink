@@ -1,0 +1,12 @@
+{
+  "nivel_estudios": "universitario_en_curso",
+  "anios_experiencia": "menos_1",
+  "habilidades_actuales": [
+    "java_basico",
+    "poo",
+    "git",
+    "sql_basico",
+    "http_rest_conceptos"
+  ],
+  "meta": "backend_junior"
+}
