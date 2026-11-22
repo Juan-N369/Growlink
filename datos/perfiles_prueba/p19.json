@@ -1,0 +1,16 @@
+{
+  "nivel_estudios": "universitario_en_curso",
+  "anios_experiencia": "1_a_3",
+  "habilidades_actuales": [
+    "java_basico",
+    "poo",
+    "spring_boot",
+    "http_rest_conceptos",
+    "apis_rest",
+    "docker",
+    "linux_cli",
+    "testing_unitario",
+    "git"
+  ],
+  "meta": "backend_cloud"
+}

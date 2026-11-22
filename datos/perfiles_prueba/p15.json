@@ -1,0 +1,11 @@
+{
+  "nivel_estudios": "tecnico",
+  "anios_experiencia": "mas_3",
+  "habilidades_actuales": [
+    "linux_cli",
+    "git",
+    "docker",
+    "sql_basico"
+  ],
+  "meta": "backend_cloud"
+}

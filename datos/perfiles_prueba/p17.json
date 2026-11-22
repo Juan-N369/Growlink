@@ -1,0 +1,10 @@
+{
+  "nivel_estudios": "universitario_en_curso",
+  "anios_experiencia": "menos_1",
+  "habilidades_actuales": [
+    "linux_cli",
+    "docker",
+    "git"
+  ],
+  "meta": "backend_microservicios"
+}
