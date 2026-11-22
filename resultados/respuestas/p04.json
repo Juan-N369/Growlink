@@ -1,0 +1,72 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "java_basico",
+      "justificacion": "Aprende los fundamentos de Java para comenzar a desarrollar la lógica de backend."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "poo",
+      "justificacion": "Comprende la programación orientada a objetos usando la base de Java."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Conoce los conceptos fundamentales del protocolo HTTP y el diseño REST."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Domina el framework principal para el desarrollo de aplicaciones backend modernas."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Construye y expone APIs REST robustas utilizando Spring Boot."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "docker",
+      "justificacion": "Conteneriza aplicaciones utilizando tus conocimientos previos de la línea de comandos en Linux."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "microservicios",
+      "justificacion": "Diseña arquitectura de microservicios combinando APIs REST y Docker."
+    },
+    {
+      "orden": 8,
+      "habilidad_id": "observabilidad",
+      "justificacion": "Monitorea y observa el comportamiento de los microservicios desplegados."
+    },
+    {
+      "orden": 9,
+      "habilidad_id": "cloud_basico",
+      "justificacion": "Aprende los fundamentos de la nube para desplegar contenedores escalables."
+    },
+    {
+      "orden": 10,
+      "habilidad_id": "testing_unitario",
+      "justificacion": "Aprende a realizar pruebas unitarias sobre código Java para asegurar su calidad."
+    },
+    {
+      "orden": 11,
+      "habilidad_id": "ci_cd",
+      "justificacion": "Implementa integración y despliegue continuo usando Git, Docker y las pruebas unitarias."
+    },
+    {
+      "orden": 12,
+      "habilidad_id": "kubernetes",
+      "justificacion": "Orquesta contenedores Docker en entornos de producción en la nube."
+    }
+  ],
+  "meta": {
+    "intentos": 2,
+    "valido": true,
+    "tiempoMs": 3436,
+    "reglasFalladas": [
+      "R6"
+    ]
+  }
+}

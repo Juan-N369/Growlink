@@ -1,0 +1,82 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "linux_cli",
+      "justificacion": "Es fundamental dominar la línea de comandos en Linux para poder trabajar posteriormente con contenedores."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "docker",
+      "justificacion": "Permite empaquetar aplicaciones en contenedores, siendo la base para la nube y la orquestación."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "git",
+      "justificacion": "Es esencial para el control de versiones y la colaboración en flujos de integración continua."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "java_basico",
+      "justificacion": "Proporciona las bases de programación necesarias para entender el desarrollo backend."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "poo",
+      "justificacion": "Permite estructurar el código backend usando la programación orientada a objetos."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Enseña los conceptos fundamentales de HTTP y el diseño REST."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Facilita la creación de aplicaciones backend modernas basadas en Java."
+    },
+    {
+      "orden": 8,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite construir y exponer servicios web RESTful robustos."
+    },
+    {
+      "orden": 9,
+      "habilidad_id": "microservicios",
+      "justificacion": "Evoluciona las APIs hacia una arquitectura desacoplada de microservicios."
+    },
+    {
+      "orden": 10,
+      "habilidad_id": "testing_unitario",
+      "justificacion": "Garantiza la calidad del código mediante pruebas, requisito clave para el pipeline de CI/CD."
+    },
+    {
+      "orden": 11,
+      "habilidad_id": "ci_cd",
+      "justificacion": "Automatiza la integración y el despliegue continuo usando Git, Docker y pruebas unitarias."
+    },
+    {
+      "orden": 12,
+      "habilidad_id": "kubernetes",
+      "justificacion": "Facilita la orquestación avanzada de contenedores basados en Docker."
+    },
+    {
+      "orden": 13,
+      "habilidad_id": "cloud_basico",
+      "justificacion": "Aporta los fundamentos de nube necesarios para el despliegue de infraestructura."
+    },
+    {
+      "orden": 14,
+      "habilidad_id": "observabilidad",
+      "justificacion": "Permite monitorear y observar el rendimiento de los microservicios desplegados."
+    }
+  ],
+  "meta": {
+    "intentos": 2,
+    "valido": true,
+    "tiempoMs": 3535,
+    "reglasFalladas": [
+      "R6"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "linux_cli",
+      "justificacion": "Es fundamental dominar la línea de comandos en Linux para poder trabajar posteriormente con contenedores y entornos cloud."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Permite comprender los fundamentos de la web y el protocolo HTTP necesarios para el desarrollo de servicios."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "docker",
+      "justificacion": "Permite empaquetar aplicaciones para asegurar que funcionen de manera idéntica en cualquier entorno cloud."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Base para construir aplicaciones robustas con Java."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite exponer servicios web utilizando los conceptos de HTTP y Spring Boot."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "microservicios",
+      "justificacion": "Arquitectura basada en servicios independientes interconectados."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "testing_unitario",
+      "justificacion": "Esencial para garantizar la calidad del código mediante la creación de pruebas automatizadas."
+    },
+    {
+      "orden": 8,
+      "habilidad_id": "ci_cd",
+      "justificacion": "Automatiza el proceso de integración y despliegue continuo utilizando control de versiones y contenedores."
+    },
+    {
+      "orden": 9,
+      "habilidad_id": "kubernetes",
+      "justificacion": "Facilita la orquestación y gestión de contenedores a escala en infraestructuras cloud."
+    },
+    {
+      "orden": 10,
+      "habilidad_id": "cloud_basico",
+      "justificacion": "Aporta los conocimientos fundamentales sobre servicios y arquitecturas en la nube."
+    },
+    {
+      "orden": 11,
+      "habilidad_id": "observabilidad",
+      "justificacion": "Permite monitorizar, registrar y rastrear el estado de las aplicaciones distribuidas en microservicios."
+    }
+  ],
+  "meta": {
+    "intentos": 2,
+    "valido": true,
+    "tiempoMs": 3191,
+    "reglasFalladas": [
+      "R6"
+    ]
+  }
+}

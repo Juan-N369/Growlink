@@ -1,0 +1,40 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "java_basico",
+      "justificacion": "Es el lenguaje fundamental para iniciar en el desarrollo backend."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "poo",
+      "justificacion": "Permite comprender los paradigmas de programación necesarios para estructurar código en Java."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "sql_basico",
+      "justificacion": "Es esencial para gestionar y consultar bases de datos relacionales."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Facilita el desarrollo rápido de aplicaciones backend robustas basadas en Java."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Entrega los conceptos teóricos necesarios para la comunicación web y arquitecturas REST."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite construir servicios web orientados a la integración con clientes frontend y otros sistemas."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 4512,
+    "reglasFalladas": []
+  }
+}

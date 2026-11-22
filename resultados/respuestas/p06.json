@@ -1,0 +1,55 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "poo",
+      "justificacion": "Es fundamental para estructurar código robusto en Java y continuar con el desarrollo backend."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "sql_basico",
+      "justificacion": "Necesario para gestionar bases de datos relacionales en la arquitectura del backend."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Permite comprender los protocolos de comunicación web antes de construir servicios."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Framework central requerido para la meta de microservicios."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite exponer servicios web utilizando Spring Boot y los conceptos HTTP aprendidos."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "linux_cli",
+      "justificacion": "Facilita la interacción con entornos de servidor para despliegues."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "docker",
+      "justificacion": "Esencial para empaquetar y aislar microservicios en contenedores."
+    },
+    {
+      "orden": 8,
+      "habilidad_id": "microservicios",
+      "justificacion": "Core de la meta seleccionada para diseñar arquitecturas escalables."
+    },
+    {
+      "orden": 9,
+      "habilidad_id": "mensajeria",
+      "justificacion": "Permite la comunicación asíncrona entre los microservicios."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 7178,
+    "reglasFalladas": []
+  }
+}

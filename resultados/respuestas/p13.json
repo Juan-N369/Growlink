@@ -1,0 +1,20 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "observabilidad",
+      "justificacion": "Permite monitorear y garantizar la salud de los sistemas distribuidos en la nube."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "cloud_basico",
+      "justificacion": "Proporciona los fundamentos necesarios para desplegar y gestionar aplicaciones en entornos de nube."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 6578,
+    "reglasFalladas": []
+  }
+}

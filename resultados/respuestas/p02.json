@@ -1,0 +1,55 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "java_basico",
+      "justificacion": "Es el punto de partida fundamental para aprender desarrollo backend con Java y cumplir con los prerrequisitos de la ruta."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "poo",
+      "justificacion": "Permite comprender los paradigmas esenciales de la programación orientada a objetos usando Java."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Proporciona los conceptos teóricos clave sobre protocolos web necesarios para construir servicios."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Es el framework principal para desarrollar aplicaciones backend eficientes."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "linux_cli",
+      "justificacion": "Enseña el manejo de la terminal de Linux, requisito indispensable para el uso de contenedores."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "docker",
+      "justificacion": "Permite empaquetar aplicaciones para garantizar su correcta ejecución en cualquier entorno."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Facilita la construcción de interfaces de comunicación robustas bajo arquitectura REST."
+    },
+    {
+      "orden": 8,
+      "habilidad_id": "microservicios",
+      "justificacion": "Desarrolla la capacidad de diseñar e implementar arquitecturas distribuidas basadas en microservicios."
+    },
+    {
+      "orden": 9,
+      "habilidad_id": "mensajeria",
+      "justificacion": "Implementa comunicación asíncrona entre servicios para sistemas distribuidos escalables."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 1906,
+    "reglasFalladas": []
+  }
+}

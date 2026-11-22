@@ -1,0 +1,47 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "linux_cli",
+      "justificacion": "Es fundamental dominar la terminal para gestionar sistemas operativos y preparar el camino hacia la contenedorización."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "docker",
+      "justificacion": "Permite empaquetar aplicaciones backend para asegurar su portabilidad y consistencia en diferentes entornos."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "microservicios",
+      "justificacion": "Permite estructurar aplicaciones escalables y distribuidas utilizando los conocimientos previos en APIs REST y Spring Boot."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "ci_cd",
+      "justificacion": "Automatiza la integración y despliegue continuo de código, mejorando la eficiencia del ciclo de desarrollo."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "kubernetes",
+      "justificacion": "Es esencial para orquestar y escalar contenedores de forma automatizada en entornos de producción complejos."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "cloud_basico",
+      "justificacion": "Aporta los conocimientos de infraestructura en la nube necesarios para desplegar arquitecturas modernas."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "observabilidad",
+      "justificacion": "Permite monitorear y rastrear el rendimiento de los servicios distribuidos en la nube para garantizar su alta disponibilidad."
+    }
+  ],
+  "meta": {
+    "intentos": 2,
+    "valido": true,
+    "tiempoMs": 2185,
+    "reglasFalladas": [
+      "R6"
+    ]
+  }
+}

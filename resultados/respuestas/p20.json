@@ -1,0 +1,20 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "git",
+      "justificacion": "Es fundamental para el control de versiones en equipos de desarrollo."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "sql_basico",
+      "justificacion": "Permite gestionar y consultar bases de datos relacionales requeridas para el rol."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 817,
+    "reglasFalladas": []
+  }
+}

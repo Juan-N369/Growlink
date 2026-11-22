@@ -1,0 +1,35 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "git",
+      "justificacion": "Es fundamental para el control de versiones en cualquier proyecto backend."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "sql_basico",
+      "justificacion": "Necesario para interactuar con bases de datos relacionales."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Permite iniciar el desarrollo backend moderno en Java."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Comprender el protocolo HTTP es esencial para diseñar APIs."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Habilidad clave para construir servicios web listos para producción."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 1269,
+    "reglasFalladas": []
+  }
+}

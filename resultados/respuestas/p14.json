@@ -1,0 +1,15 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "kubernetes",
+      "justificacion": "Dado tu perfil avanzado, Kubernetes es la habilidad clave pendiente para completar tu dominio en arquitectura orientada a nube."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 807,
+    "reglasFalladas": []
+  }
+}
