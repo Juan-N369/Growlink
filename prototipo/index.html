@@ -28,17 +28,17 @@
           <select id="estudios">
             <option>Bachiller</option>
             <option>Técnico</option>
-            <option selected>Universitario en curso</option>
-            <option>Universitario titulado</option>
+            <option selected>universitario_en_curso</option>
+            <option>universitario_titulado</option>
           </select>
         </div>
         <div>
           <label for="experiencia">Experiencia</label>
           <select id="experiencia">
             <option>Ninguna</option>
-            <option selected>Menos de 1 año</option>
-            <option>1 a 3 años</option>
-            <option>Más de 3 años</option>
+            <option selected>Menos_1_año</option>
+            <option>1_a_3_años</option>
+            <option>mas_3_años</option>
           </select>
         </div>
       </div>
@@ -48,8 +48,7 @@
 
       <button id="btn-generar" class="btn" disabled>Generar roadmap</button>
     </div>
-    <label class="demo"><input type="checkbox" id="simular-error"> Simular error (demo)</label>
-    <p class="nota">Prototipo navegable: los resultados son predeterminados.</p>
+    <p class="nota">Conectado al backend: el roadmap lo genera un LLM y lo verifica el validador.</p>
   </main>
 </section>
 
@@ -57,7 +56,7 @@
 <section id="vista-carga" class="vista">
   <div class="centro">
     <div class="spinner"></div>
-    <h2 id="msg-carga">Generando con Claude…</h2>
+    <h2 id="msg-carga">Generando…</h2>
     <p>Esto toma unos segundos.</p>
   </div>
 </section>
@@ -66,9 +65,8 @@
 <section id="vista-error" class="vista">
   <div class="centro">
     <h2>No pudimos generar un roadmap válido</h2>
-    <p>Se agotaron los 2 intentos sin obtener una respuesta que cumpla las reglas de validación.
-       Por seguridad no se muestra ningún roadmap parcial.</p>
-    <p style="font-size:.8rem">Error 422</p>
+    <p id="msg-error"></p>
+    <p style="font-size:.8rem" id="codigo-error"></p>
     <button id="btn-reintentar" class="btn">Intentar de nuevo</button>
   </div>
 </section>

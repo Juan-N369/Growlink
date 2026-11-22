@@ -30,40 +30,6 @@ const METAS = {
   backend_microservicios:"Backend con microservicios",
   backend_cloud:"Backend orientado a nube"
 };
-// Roadmaps predeterminados (perfil de ejemplo: ya domina java_basico y git)
-const ROADMAPS = {
-  backend_junior:[
-    ["poo","Base necesaria para trabajar con Spring Boot."],
-    ["sql_basico","Fundamento para manejar datos en cualquier backend."],
-    ["http_rest_conceptos","Fundamento de las APIs que vas a construir."],
-    ["spring_boot","Framework principal del backend en Java."],
-    ["apis_rest","Habilidad clave de la meta: exponer servicios a los clientes."]
-  ],
-  backend_microservicios:[
-    ["poo","Base necesaria para Spring Boot."],
-    ["spring_boot","Framework principal del backend."],
-    ["http_rest_conceptos","Fundamento de las APIs."],
-    ["apis_rest","Requisito directo de microservicios."],
-    ["linux_cli","Requisito para trabajar con Docker."],
-    ["docker","Los microservicios se empaquetan en contenedores."],
-    ["microservicios","Meta principal del usuario."],
-    ["mensajeria","Comunicación asíncrona entre servicios."]
-  ],
-  backend_cloud:[
-    ["linux_cli","Base para trabajar con contenedores y servidores."],
-    ["docker","Requisito de Kubernetes y del despliegue en la nube."],
-    ["testing_unitario","Requisito para automatizar pruebas en CI/CD."],
-    ["ci_cd","Habilidad clave: automatizar integración y despliegue."],
-    ["kubernetes","Habilidad clave: orquestar contenedores a escala."],
-    ["cloud_basico","Habilidad clave: entender los servicios de la nube."],
-    ["poo","Base necesaria para Spring Boot."],
-    ["spring_boot","Framework sobre el que se construyen los servicios."],
-    ["http_rest_conceptos","Fundamento de las APIs."],
-    ["apis_rest","Requisito de microservicios."],
-    ["microservicios","Requisito de observabilidad."],
-    ["observabilidad","Habilidad clave: monitorear sistemas distribuidos."]
-  ]
-};
 
 const $ = id => document.getElementById(id);
 function mostrar(id){
@@ -79,6 +45,7 @@ Object.entries(METAS).forEach(([id,nombre]) => {
 Object.entries(HAB).forEach(([id,h]) => {
   const b = document.createElement("button");
   b.type = "button"; b.className = "chip"; b.textContent = h[0];
+  b.dataset.id = id;
   if (id === "java_basico" || id === "git") b.classList.add("on");
   b.setAttribute("aria-pressed", b.classList.contains("on"));
   b.onclick = () => { b.classList.toggle("on"); b.setAttribute("aria-pressed", b.classList.contains("on")); };
@@ -88,25 +55,50 @@ const hoy = new Date(); hoy.setHours(0,0,0,0);
 $("fecha").min = hoy.toISOString().slice(0,10);
 $("meta").onchange = () => { $("btn-generar").disabled = !$("meta").value; };
 
-// ---- Generar (simulado) ----
-$("btn-generar").onclick = () => {
+const API = "http://localhost:8080/api/roadmap";
+const esc = s => String(s).replace(/[&<>"']/g,
+  c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+$("btn-generar").onclick = async () => {
   const meta = $("meta").value;
   if (!meta) return;
-  const error = $("simular-error").checked;
+  const perfil = {
+    nivel_estudios: $("estudios").value,
+    anios_experiencia: $("experiencia").value,
+    habilidades_actuales: [...document.querySelectorAll("#chips .chip.on")].map(c => c.dataset.id),
+    meta
+  };
   mostrar("vista-carga");
-  const msgs = [[0,"Generando con Claude…"],[1000,"Validando contra el catálogo…"]];
-  if (error) msgs.push([2000,"Reintentando…"],[3000,"Validando de nuevo…"]);
-  msgs.forEach(([t,m]) => setTimeout(() => { $("msg-carga").textContent = m; }, t));
-  setTimeout(() => { error ? mostrar("vista-error") : construir(meta); }, error ? 4000 : 2000);
+  $("msg-carga").textContent = "Generando con IA y validando contra el catálogo…";
+  try {
+    const r = await fetch(API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(perfil)
+    });
+    const datos = await r.json();
+    if (r.ok) {
+      construir(meta, datos.roadmap);
+    } else {
+      $("msg-error").textContent = datos.error || "Error inesperado";
+      $("codigo-error").textContent = "Error " + r.status;
+      mostrar("vista-error");
+    }
+  } catch (e) {
+    $("msg-error").textContent = "No se pudo conectar con el servidor. ¿Está encendido el backend?";
+    $("codigo-error").textContent = "Sin conexión";
+    mostrar("vista-error");
+  }
 };
+
 $("btn-reintentar").onclick = () => mostrar("vista-meta");
 $("btn-volver").onclick = () => mostrar("vista-meta");
 
 // ---- Pantalla 2 ----
 let marcadas = new Set(), aplicadas = new Set(), total = 0;
 
-function construir(meta){
-  const pasos = ROADMAPS[meta];
+function construir(meta, roadmap){
+  const pasos = roadmap.map(p => [p.habilidad_id, p.justificacion]);
   total = pasos.length; marcadas = new Set(); aplicadas = new Set();
   $("titulo-meta").textContent = METAS[meta];
   $("texto-fecha").textContent = textoFecha();
@@ -119,7 +111,7 @@ function construir(meta){
       '<div class="tarjeta" role="button" tabindex="0" aria-pressed="false">' +
         '<div class="top"><span class="num">' + (i+1) + '</span><span class="nivel">' + NIVEL[nivel] + '</span></div>' +
         '<h3 class="nombre">' + nombre + '</h3>' +
-        '<p>' + just + '</p>' +
+        '<p>' + esc(just) + '</p>' +
         '<p class="req">' + (pre.length ? "Requiere: " + pre.map(p => HAB[p][0]).join(", ") : "Sin prerrequisitos") + '</p>' +
       '</div>';
     const tarjeta = item.firstChild;
