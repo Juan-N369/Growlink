@@ -10,8 +10,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.client.JdkClientHttpRequestFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpServerErrorException;
+import org.springframework.web.client.HttpStatusCodeException;
+import org.springframework.web.client.ResourceAccessException;
 
 @Component
 public class ClienteGemini {
@@ -32,10 +32,10 @@ public class ClienteGemini {
     public record Respuesta(List<Candidato> candidates) {}
 
     private final RestClient http;
-    private final String modelo;
+    private final List<String> modelos;
 
     public ClienteGemini(@Value("${gemini.api-key}") String apiKey,
-                         @Value("${gemini.modelo}") String modelo) {
+                         @Value("${gemini.modelo}") List<String> modelos) {
         var factory = new JdkClientHttpRequestFactory();
         factory.setReadTimeout(Duration.ofSeconds(60));
         this.http = RestClient.builder()
@@ -43,7 +43,7 @@ public class ClienteGemini {
                 .baseUrl("https://generativelanguage.googleapis.com")
                 .defaultHeader("x-goog-api-key", apiKey)
                 .build();
-        this.modelo = modelo;
+        this.modelos = modelos;
     }
 
     public String completar(String sistema, List<Mensaje> mensajes) {
@@ -68,23 +68,36 @@ public class ClienteGemini {
     }
 
     private Respuesta llamar(Map<String, Object> cuerpo) {
-    for (int intento = 1; ; intento++) {
-        try {
-            return http.post()
-                    .uri("/v1beta/models/{modelo}:generateContent", modelo)
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .body(cuerpo)
-                    .retrieve()
-                    .body(Respuesta.class);
-        } catch (HttpServerErrorException | HttpClientErrorException.TooManyRequests e) {
-            if (intento == 4) throw e;
-            try {
-                Thread.sleep(3000L * intento);
-            } catch (InterruptedException ie) {
-                Thread.currentThread().interrupt();
-                throw e;
-            }
+        RuntimeException ultimo = null;
+                for (String modelo : modelos) {
+                        for (int intento = 1; intento <= 3; intento++) {
+                        try {
+                                return http.post()
+                                        .uri("/v1beta/models/{modelo}:generateContent", modelo)
+                                        .contentType(MediaType.APPLICATION_JSON)
+                                        .body(cuerpo)
+                                        .retrieve()
+                                        .body(Respuesta.class);
+                        } catch (HttpStatusCodeException e) {
+                                int s = e.getStatusCode().value();
+                                if (s != 404 && s != 429 && s < 500) throw e;
+                                ultimo = e;
+                                if (s == 404) break;
+                                pausa(5000L * intento);
+                        } catch (ResourceAccessException e) {
+                                ultimo = e;
+                                break;
+                        }
+                        }
+                }
+                throw ultimo;
         }
-    }
-}
+
+        private void pausa(long ms) {
+                try {
+                        Thread.sleep(ms);
+                } catch (InterruptedException ie) {
+                       Thread.currentThread().interrupt();
+                }
+        }
 }

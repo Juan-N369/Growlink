@@ -53,4 +53,10 @@ public class PromptRoadmap {
         if (i < 0 || j < i) throw new IllegalArgumentException("La respuesta no contiene JSON");
         return mapper.readValue(texto.substring(i, j + 1), Salida.class).roadmap();
     }
+
+    public String correccion(List<String> violaciones) {
+    return "Tu roadmap anterior incumple estas reglas:\n- " + String.join("\n- ", violaciones)
+            + "\nCorrígelo y responde únicamente con el JSON completo del roadmap.";
+    }
+    
 }
