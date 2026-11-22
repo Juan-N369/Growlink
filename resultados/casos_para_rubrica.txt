@@ -1,0 +1,152 @@
+## p01 | bachiller | exp ninguna | meta backend_junior | tiene: -
+1. java_basico (pre: -): Es el cimiento indispensable para aprender desarrollo backend con Java.
+2. poo (pre: java_basico): Permite comprender los paradigmas de programación fundamentales para la estructura del código.
+3. git (pre: -): Es esencial para el control de versiones y el trabajo en equipo en el desarrollo de software.
+4. sql_basico (pre: -): Necesario para interactuar con bases de datos relacionales y almacenar información.
+5. spring_boot (pre: java_basico,poo): Facilita la creación de aplicaciones backend robustas utilizando Java.
+6. http_rest_conceptos (pre: -): Proporciona los conceptos teóricos necesarios sobre protocolos web.
+7. apis_rest (pre: spring_boot,http_rest_conceptos): Permite construir servicios web funcionales y conectarlos con clientes.
+## p02 | bachiller | exp ninguna | meta backend_microservicios | tiene: -
+1. java_basico (pre: -): Es el punto de partida fundamental para aprender desarrollo backend con Java y cumplir con los prerrequisitos de la ruta.
+2. poo (pre: java_basico): Permite comprender los paradigmas esenciales de la programación orientada a objetos usando Java.
+3. http_rest_conceptos (pre: -): Proporciona los conceptos teóricos clave sobre protocolos web necesarios para construir servicios.
+4. spring_boot (pre: java_basico,poo): Es el framework principal para desarrollar aplicaciones backend eficientes.
+5. linux_cli (pre: -): Enseña el manejo de la terminal de Linux, requisito indispensable para el uso de contenedores.
+6. docker (pre: linux_cli): Permite empaquetar aplicaciones para garantizar su correcta ejecución en cualquier entorno.
+7. apis_rest (pre: spring_boot,http_rest_conceptos): Facilita la construcción de interfaces de comunicación robustas bajo arquitectura REST.
+8. microservicios (pre: apis_rest,docker): Desarrolla la capacidad de diseñar e implementar arquitecturas distribuidas basadas en microservicios.
+9. mensajeria (pre: microservicios): Implementa comunicación asíncrona entre servicios para sistemas distribuidos escalables.
+## p03 | bachiller | exp ninguna | meta backend_cloud | tiene: -
+1. linux_cli (pre: -): Es fundamental dominar la línea de comandos en Linux para poder trabajar posteriormente con contenedores.
+2. docker (pre: linux_cli): Permite empaquetar aplicaciones en contenedores, siendo la base para la nube y la orquestación.
+3. git (pre: -): Es esencial para el control de versiones y la colaboración en flujos de integración continua.
+4. java_basico (pre: -): Proporciona las bases de programación necesarias para entender el desarrollo backend.
+5. poo (pre: java_basico): Permite estructurar el código backend usando la programación orientada a objetos.
+6. http_rest_conceptos (pre: -): Enseña los conceptos fundamentales de HTTP y el diseño REST.
+7. spring_boot (pre: java_basico,poo): Facilita la creación de aplicaciones backend modernas basadas en Java.
+8. apis_rest (pre: spring_boot,http_rest_conceptos): Permite construir y exponer servicios web RESTful robustos.
+9. microservicios (pre: apis_rest,docker): Evoluciona las APIs hacia una arquitectura desacoplada de microservicios.
+10. testing_unitario (pre: java_basico): Garantiza la calidad del código mediante pruebas, requisito clave para el pipeline de CI/CD.
+11. ci_cd (pre: git,docker,testing_unitario): Automatiza la integración y el despliegue continuo usando Git, Docker y pruebas unitarias.
+12. kubernetes (pre: docker): Facilita la orquestación avanzada de contenedores basados en Docker.
+13. cloud_basico (pre: docker): Aporta los fundamentos de nube necesarios para el despliegue de infraestructura.
+14. observabilidad (pre: microservicios): Permite monitorear y observar el rendimiento de los microservicios desplegados.
+  RECHAZO intento 1: R6: 'observabilidad' requiere 'microservicios' antes, y no está en el perfil ni en pasos anteriores.
+## p04 | tecnico | exp menos_1 | meta backend_cloud | tiene: linux_cli,git
+1. java_basico (pre: -): Aprende los fundamentos de Java para comenzar a desarrollar la lógica de backend.
+2. poo (pre: java_basico): Comprende la programación orientada a objetos usando la base de Java.
+3. http_rest_conceptos (pre: -): Conoce los conceptos fundamentales del protocolo HTTP y el diseño REST.
+4. spring_boot (pre: java_basico,poo): Domina el framework principal para el desarrollo de aplicaciones backend modernas.
+5. apis_rest (pre: spring_boot,http_rest_conceptos): Construye y expone APIs REST robustas utilizando Spring Boot.
+6. docker (pre: linux_cli): Conteneriza aplicaciones utilizando tus conocimientos previos de la línea de comandos en Linux.
+7. microservicios (pre: apis_rest,docker): Diseña arquitectura de microservicios combinando APIs REST y Docker.
+8. observabilidad (pre: microservicios): Monitorea y observa el comportamiento de los microservicios desplegados.
+9. cloud_basico (pre: docker): Aprende los fundamentos de la nube para desplegar contenedores escalables.
+10. testing_unitario (pre: java_basico): Aprende a realizar pruebas unitarias sobre código Java para asegurar su calidad.
+11. ci_cd (pre: git,docker,testing_unitario): Implementa integración y despliegue continuo usando Git, Docker y las pruebas unitarias.
+12. kubernetes (pre: docker): Orquesta contenedores Docker en entornos de producción en la nube.
+  RECHAZO intento 1: R6: 'observabilidad' requiere 'microservicios' antes, y no está en el perfil ni en pasos anteriores.
+## p05 | tecnico | exp 1_a_3 | meta backend_junior | tiene: java_basico,sql_basico,git
+1. poo (pre: java_basico): Es fundamental para avanzar en el desarrollo backend en Java.
+2. spring_boot (pre: java_basico,poo): Permite construir aplicaciones backend robustas sobre la base de Java.
+3. http_rest_conceptos (pre: -): Necesario para comprender el protocolo de comunicación web antes de exponer servicios.
+4. apis_rest (pre: spring_boot,http_rest_conceptos): Permite cumplir con la meta de desarrollar servicios web listos para producción.
+## p06 | universitario_en_curso | exp menos_1 | meta backend_microservicios | tiene: java_basico,git
+1. poo (pre: java_basico): Es fundamental para estructurar código robusto en Java y continuar con el desarrollo backend.
+2. sql_basico (pre: -): Necesario para gestionar bases de datos relacionales en la arquitectura del backend.
+3. http_rest_conceptos (pre: -): Permite comprender los protocolos de comunicación web antes de construir servicios.
+4. spring_boot (pre: java_basico,poo): Framework central requerido para la meta de microservicios.
+5. apis_rest (pre: spring_boot,http_rest_conceptos): Permite exponer servicios web utilizando Spring Boot y los conceptos HTTP aprendidos.
+6. linux_cli (pre: -): Facilita la interacción con entornos de servidor para despliegues.
+7. docker (pre: linux_cli): Esencial para empaquetar y aislar microservicios en contenedores.
+8. microservicios (pre: apis_rest,docker): Core de la meta seleccionada para diseñar arquitecturas escalables.
+9. mensajeria (pre: microservicios): Permite la comunicación asíncrona entre los microservicios.
+## p07 | universitario_en_curso | exp ninguna | meta backend_junior | tiene: java_basico,poo,estructuras_datos
+1. git (pre: -): Es fundamental para el control de versiones en cualquier proyecto backend.
+2. sql_basico (pre: -): Necesario para interactuar con bases de datos relacionales.
+3. spring_boot (pre: java_basico,poo): Permite iniciar el desarrollo backend moderno en Java.
+4. http_rest_conceptos (pre: -): Comprender el protocolo HTTP es esencial para diseñar APIs.
+5. apis_rest (pre: spring_boot,http_rest_conceptos): Habilidad clave para construir servicios web listos para producción.
+## p08 | universitario_en_curso | exp menos_1 | meta backend_junior | tiene: java_basico,poo,git,sql_basico,http_rest_conceptos
+1. spring_boot (pre: java_basico,poo): Es la base fundamental para desarrollar aplicaciones backend modernas en Java.
+2. apis_rest (pre: spring_boot,http_rest_conceptos): Permite exponer servicios web robustos y conectados a bases de datos cumpliendo con la meta de backend junior.
+## p09 | universitario_en_curso | exp 1_a_3 | meta backend_microservicios | tiene: java_basico,poo,git,sql_basico,spring_boot,http_rest_conceptos,apis_rest
+1. linux_cli (pre: -): Es necesario dominar la terminal para gestionar entornos de desarrollo y servidores.
+2. docker (pre: linux_cli): Permite empaquetar aplicaciones de forma aislada, requisito previo para microservicios.
+3. microservicios (pre: apis_rest,docker): Aprenderás a diseñar arquitecturas escalables basadas en servicios desacoplados.
+4. mensajeria (pre: microservicios): Facilita la comunicación asíncrona y eficiente entre los diferentes microservicios.
+## p10 | universitario_titulado | exp ninguna | meta backend_cloud | tiene: java_basico,poo,git,sql_basico,estructuras_datos
+1. linux_cli (pre: -): Es fundamental dominar la línea de comandos en Linux para poder trabajar posteriormente con contenedores y entornos cloud.
+2. http_rest_conceptos (pre: -): Permite comprender los fundamentos de la web y el protocolo HTTP necesarios para el desarrollo de servicios.
+3. docker (pre: linux_cli): Permite empaquetar aplicaciones para asegurar que funcionen de manera idéntica en cualquier entorno cloud.
+4. spring_boot (pre: java_basico,poo): Base para construir aplicaciones robustas con Java.
+5. apis_rest (pre: spring_boot,http_rest_conceptos): Permite exponer servicios web utilizando los conceptos de HTTP y Spring Boot.
+6. microservicios (pre: apis_rest,docker): Arquitectura basada en servicios independientes interconectados.
+7. testing_unitario (pre: java_basico): Esencial para garantizar la calidad del código mediante la creación de pruebas automatizadas.
+8. ci_cd (pre: git,docker,testing_unitario): Automatiza el proceso de integración y despliegue continuo utilizando control de versiones y contenedores.
+9. kubernetes (pre: docker): Facilita la orquestación y gestión de contenedores a escala en infraestructuras cloud.
+10. cloud_basico (pre: docker): Aporta los conocimientos fundamentales sobre servicios y arquitecturas en la nube.
+11. observabilidad (pre: microservicios): Permite monitorizar, registrar y rastrear el estado de las aplicaciones distribuidas en microservicios.
+  RECHAZO intento 1: R6: 'observabilidad' requiere 'microservicios' antes, y no está en el perfil ni en pasos anteriores.
+## p11 | universitario_titulado | exp 1_a_3 | meta backend_cloud | tiene: java_basico,poo,git,sql_basico,spring_boot,http_rest_conceptos,apis_rest,maven_gradle,testing_unitario
+1. linux_cli (pre: -): Es fundamental dominar la terminal para gestionar sistemas operativos y preparar el camino hacia la contenedorización.
+2. docker (pre: linux_cli): Permite empaquetar aplicaciones backend para asegurar su portabilidad y consistencia en diferentes entornos.
+3. microservicios (pre: apis_rest,docker): Permite estructurar aplicaciones escalables y distribuidas utilizando los conocimientos previos en APIs REST y Spring Boot.
+4. ci_cd (pre: git,docker,testing_unitario): Automatiza la integración y despliegue continuo de código, mejorando la eficiencia del ciclo de desarrollo.
+5. kubernetes (pre: docker): Es esencial para orquestar y escalar contenedores de forma automatizada en entornos de producción complejos.
+6. cloud_basico (pre: docker): Aporta los conocimientos de infraestructura en la nube necesarios para desplegar arquitecturas modernas.
+7. observabilidad (pre: microservicios): Permite monitorear y rastrear el rendimiento de los servicios distribuidos en la nube para garantizar su alta disponibilidad.
+  RECHAZO intento 1: R6: 'observabilidad' requiere 'microservicios' antes, y no está en el perfil ni en pasos anteriores.
+## p12 | universitario_titulado | exp mas_3 | meta backend_microservicios | tiene: java_basico,poo,git,sql_basico,estructuras_datos,linux_cli,http_rest_conceptos,spring_boot,apis_rest,jpa_hibernate,testing_unitario,maven_gradle,seguridad_basica,docker
+1. microservicios (pre: apis_rest,docker): Es la habilidad clave para tu meta de backend con microservicios y ya cumples con los prerrequisitos.
+2. mensajeria (pre: microservicios): Permite la comunicación asíncrona entre microservicios, completando las habilidades clave de tu meta.
+## p13 | universitario_titulado | exp mas_3 | meta backend_cloud | tiene: java_basico,poo,git,sql_basico,estructuras_datos,linux_cli,http_rest_conceptos,spring_boot,apis_rest,jpa_hibernate,testing_unitario,docker,seguridad_basica,maven_gradle,microservicios,mensajeria,ci_cd,kubernetes
+1. observabilidad (pre: microservicios): Permite monitorear y garantizar la salud de los sistemas distribuidos en la nube.
+2. cloud_basico (pre: docker): Proporciona los fundamentos necesarios para desplegar y gestionar aplicaciones en entornos de nube.
+## p14 | universitario_titulado | exp mas_3 | meta backend_cloud | tiene: java_basico,poo,git,sql_basico,estructuras_datos,linux_cli,http_rest_conceptos,spring_boot,apis_rest,jpa_hibernate,testing_unitario,docker,seguridad_basica,maven_gradle,microservicios,mensajeria,ci_cd,observabilidad,cloud_basico
+1. kubernetes (pre: docker): Dado tu perfil avanzado, Kubernetes es la habilidad clave pendiente para completar tu dominio en arquitectura orientada a nube.
+## p15 | tecnico | exp mas_3 | meta backend_cloud | tiene: linux_cli,git,docker,sql_basico
+1. java_basico (pre: -): Necesario dominar los fundamentos de Java como base previa para el desarrollo backend orientado a nube.
+2. poo (pre: java_basico): Es fundamental comprender la programación orientada a objetos para estructurar aplicaciones robustas.
+3. spring_boot (pre: java_basico,poo): Framework principal para construir servicios backend de forma rápida y escalable.
+4. http_rest_conceptos (pre: -): Comprender los protocolos de comunicación web es esencial para arquitecturas conectadas.
+5. apis_rest (pre: spring_boot,http_rest_conceptos): Permite exponer servicios que consumirán las aplicaciones en la nube.
+6. microservicios (pre: apis_rest,docker): Permite diseñar arquitecturas distribuidas y escalables.
+7. testing_unitario (pre: java_basico): Garantiza la calidad del código mediante pruebas automatizadas antes del despliegue.
+8. ci_cd (pre: git,docker,testing_unitario): Automatiza la integración y despliegue continuo de los contenedores hacia la infraestructura.
+9. kubernetes (pre: docker): Orquesta los contenedores Docker para asegurar la escalabilidad en entornos de nube.
+10. cloud_basico (pre: docker): Aporta los fundamentos necesarios para desplegar y operar servicios en entornos cloud.
+11. observabilidad (pre: microservicios): Permite monitorear, registrar y trazar el comportamiento de los microservicios en producción.
+  RECHAZO intento 1: R6: 'observabilidad' requiere 'microservicios' antes, y no está en el perfil ni en pasos anteriores.
+## p16 | bachiller | exp menos_1 | meta backend_junior | tiene: git
+1. java_basico (pre: -): Es el lenguaje fundamental para iniciar en el desarrollo backend.
+2. poo (pre: java_basico): Permite comprender los paradigmas de programación necesarios para estructurar código en Java.
+3. sql_basico (pre: -): Es esencial para gestionar y consultar bases de datos relacionales.
+4. spring_boot (pre: java_basico,poo): Facilita el desarrollo rápido de aplicaciones backend robustas basadas en Java.
+5. http_rest_conceptos (pre: -): Entrega los conceptos teóricos necesarios para la comunicación web y arquitecturas REST.
+6. apis_rest (pre: spring_boot,http_rest_conceptos): Permite construir servicios web orientados a la integración con clientes frontend y otros sistemas.
+## p17 | universitario_en_curso | exp menos_1 | meta backend_microservicios | tiene: linux_cli,docker,git
+1. java_basico (pre: -): Es el fundamento necesario para desarrollar en el ecosistema backend elegido.
+2. poo (pre: java_basico): Permite estructurar el código de manera orientada a objetos usando Java.
+3. http_rest_conceptos (pre: -): Esencial para entender cómo funcionan las comunicaciones web y las APIs.
+4. spring_boot (pre: java_basico,poo): Framework principal para construir la base de la aplicación backend.
+5. apis_rest (pre: spring_boot,http_rest_conceptos): Permite exponer servicios web utilizando Spring Boot y conceptos REST.
+6. microservicios (pre: apis_rest,docker): Facilita la arquitectura distribuida integrando Docker y las APIs REST.
+7. mensajeria (pre: microservicios): Habilita la comunicación asíncrona entre microservicios.
+## p18 | tecnico | exp 1_a_3 | meta backend_microservicios | tiene: java_basico,poo,sql_basico,git,spring_boot,jpa_hibernate,maven_gradle
+1. http_rest_conceptos (pre: -): Es fundamental para comprender el diseño y funcionamiento de los servicios web.
+2. linux_cli (pre: -): Permite gestionar entornos basados en Linux, necesarios para despliegues modernos.
+3. apis_rest (pre: spring_boot,http_rest_conceptos): Permite exponer endpoints seguros y escalables usando Spring Boot.
+4. docker (pre: linux_cli): Facilita empaquetar la aplicación y sus dependencias en contenedores portables.
+5. microservicios (pre: apis_rest,docker): Core para diseñar arquitecturas distribuidas basadas en Spring Boot.
+6. mensajeria (pre: microservicios): Permite la comunicación asíncrona y desacoplada entre microservicios.
+## p19 | universitario_en_curso | exp 1_a_3 | meta backend_cloud | tiene: java_basico,poo,spring_boot,http_rest_conceptos,apis_rest,docker,linux_cli,testing_unitario,git
+1. microservicios (pre: apis_rest,docker): Es necesario comprender la arquitectura de microservicios para implementar estrategias de observabilidad.
+2. ci_cd (pre: git,docker,testing_unitario): Permite automatizar la integración y despliegue continuo de los sistemas distribuidos.
+3. kubernetes (pre: docker): Es fundamental para la orquestación avanzada de contenedores Docker en entornos de nube.
+4. cloud_basico (pre: docker): Aporta los fundamentos necesarios para desplegar y gestionar infraestructura en la nube.
+5. observabilidad (pre: microservicios): Facilita el monitoreo, logging y trazabilidad en arquitecturas basadas en microservicios.
+  RECHAZO intento 1: R6: 'observabilidad' requiere 'microservicios' antes, y no está en el perfil ni en pasos anteriores.
+## p20 | universitario_titulado | exp 1_a_3 | meta backend_junior | tiene: java_basico,poo,estructuras_datos,spring_boot,http_rest_conceptos,apis_rest,testing_unitario,maven_gradle
+1. git (pre: -): Es fundamental para el control de versiones en equipos de desarrollo.
+2. sql_basico (pre: -): Permite gestionar y consultar bases de datos relacionales requeridas para el rol.
