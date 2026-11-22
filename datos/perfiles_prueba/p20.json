@@ -1,0 +1,15 @@
+{
+  "nivel_estudios": "universitario_titulado",
+  "anios_experiencia": "1_a_3",
+  "habilidades_actuales": [
+    "java_basico",
+    "poo",
+    "estructuras_datos",
+    "spring_boot",
+    "http_rest_conceptos",
+    "apis_rest",
+    "testing_unitario",
+    "maven_gradle"
+  ],
+  "meta": "backend_junior"
+}

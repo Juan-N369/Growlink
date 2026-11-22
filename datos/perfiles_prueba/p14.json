@@ -1,0 +1,26 @@
+{
+  "nivel_estudios": "universitario_titulado",
+  "anios_experiencia": "mas_3",
+  "habilidades_actuales": [
+    "java_basico",
+    "poo",
+    "git",
+    "sql_basico",
+    "estructuras_datos",
+    "linux_cli",
+    "http_rest_conceptos",
+    "spring_boot",
+    "apis_rest",
+    "jpa_hibernate",
+    "testing_unitario",
+    "docker",
+    "seguridad_basica",
+    "maven_gradle",
+    "microservicios",
+    "mensajeria",
+    "ci_cd",
+    "observabilidad",
+    "cloud_basico"
+  ],
+  "meta": "backend_cloud"
+}
