@@ -1,0 +1,37 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "microservicios",
+      "justificacion": "Es necesario comprender la arquitectura de microservicios para implementar estrategias de observabilidad."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "ci_cd",
+      "justificacion": "Permite automatizar la integración y despliegue continuo de los sistemas distribuidos."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "kubernetes",
+      "justificacion": "Es fundamental para la orquestación avanzada de contenedores Docker en entornos de nube."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "cloud_basico",
+      "justificacion": "Aporta los fundamentos necesarios para desplegar y gestionar infraestructura en la nube."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "observabilidad",
+      "justificacion": "Facilita el monitoreo, logging y trazabilidad en arquitecturas basadas en microservicios."
+    }
+  ],
+  "meta": {
+    "intentos": 2,
+    "valido": true,
+    "tiempoMs": 2874,
+    "reglasFalladas": [
+      "R6"
+    ]
+  }
+}

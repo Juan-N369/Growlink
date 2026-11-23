@@ -1,0 +1,20 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "microservicios",
+      "justificacion": "Es la habilidad clave para tu meta de backend con microservicios y ya cumples con los prerrequisitos."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "mensajeria",
+      "justificacion": "Permite la comunicación asíncrona entre microservicios, completando las habilidades clave de tu meta."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 1046,
+    "reglasFalladas": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Es la base fundamental para desarrollar aplicaciones backend modernas en Java."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite exponer servicios web robustos y conectados a bases de datos cumpliendo con la meta de backend junior."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 1412,
+    "reglasFalladas": []
+  }
+}

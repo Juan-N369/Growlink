@@ -1,0 +1,45 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "java_basico",
+      "justificacion": "Es el cimiento indispensable para aprender desarrollo backend con Java."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "poo",
+      "justificacion": "Permite comprender los paradigmas de programación fundamentales para la estructura del código."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "git",
+      "justificacion": "Es esencial para el control de versiones y el trabajo en equipo en el desarrollo de software."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "sql_basico",
+      "justificacion": "Necesario para interactuar con bases de datos relacionales y almacenar información."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Facilita la creación de aplicaciones backend robustas utilizando Java."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Proporciona los conceptos teóricos necesarios sobre protocolos web."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite construir servicios web funcionales y conectarlos con clientes."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 2146,
+    "reglasFalladas": []
+  }
+}

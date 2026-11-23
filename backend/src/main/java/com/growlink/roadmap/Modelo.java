@@ -1,6 +1,7 @@
 package com.growlink.roadmap;
 
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public final class Modelo {
     
@@ -8,12 +9,17 @@ public final class Modelo {
 
     public record Habilidad(String id, String nombre, String nivel, List<String> prerrequisitos) {}
 
-    public record Meta(String id, String nombre, List<String> habilidadesClave) {}
+    public record Meta(String id, String nombre,
+                   @JsonProperty("habilidades_clave") List<String> habilidadesClave) {}
 
-    public record Perfil(String nivelEstudios, String aniosExperiencia,
-                         List<String> habilidadesActuales, String meta) {}
+    public record Perfil(@JsonProperty("nivel_estudios") String nivelEstudios,
+                        @JsonProperty("anios_experiencia") String aniosExperiencia,
+                        @JsonProperty("habilidades_actuales") List<String> habilidadesActuales,
+                        String meta) {}
 
-    public record Paso(int orden, String habilidadId, String justificacion) {}
+    public record Paso(int orden,
+                    @JsonProperty("habilidad_id") String habilidadId,
+                    String justificacion) {}
 
     public record Resultado(boolean valido, List<String> violaciones) {}
 

@@ -1,0 +1,45 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "java_basico",
+      "justificacion": "Es el fundamento necesario para desarrollar en el ecosistema backend elegido."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "poo",
+      "justificacion": "Permite estructurar el código de manera orientada a objetos usando Java."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Esencial para entender cómo funcionan las comunicaciones web y las APIs."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Framework principal para construir la base de la aplicación backend."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite exponer servicios web utilizando Spring Boot y conceptos REST."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "microservicios",
+      "justificacion": "Facilita la arquitectura distribuida integrando Docker y las APIs REST."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "mensajeria",
+      "justificacion": "Habilita la comunicación asíncrona entre microservicios."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 10065,
+    "reglasFalladas": []
+  }
+}

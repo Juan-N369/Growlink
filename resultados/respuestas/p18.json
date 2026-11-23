@@ -1,0 +1,40 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Es fundamental para comprender el diseño y funcionamiento de los servicios web."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "linux_cli",
+      "justificacion": "Permite gestionar entornos basados en Linux, necesarios para despliegues modernos."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite exponer endpoints seguros y escalables usando Spring Boot."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "docker",
+      "justificacion": "Facilita empaquetar la aplicación y sus dependencias en contenedores portables."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "microservicios",
+      "justificacion": "Core para diseñar arquitecturas distribuidas basadas en Spring Boot."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "mensajeria",
+      "justificacion": "Permite la comunicación asíncrona y desacoplada entre microservicios."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 17756,
+    "reglasFalladas": []
+  }
+}

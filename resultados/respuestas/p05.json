@@ -1,0 +1,30 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "poo",
+      "justificacion": "Es fundamental para avanzar en el desarrollo backend en Java."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Permite construir aplicaciones backend robustas sobre la base de Java."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Necesario para comprender el protocolo de comunicación web antes de exponer servicios."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite cumplir con la meta de desarrollar servicios web listos para producción."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 6733,
+    "reglasFalladas": []
+  }
+}

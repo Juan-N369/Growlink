@@ -1,0 +1,30 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "linux_cli",
+      "justificacion": "Es necesario dominar la terminal para gestionar entornos de desarrollo y servidores."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "docker",
+      "justificacion": "Permite empaquetar aplicaciones de forma aislada, requisito previo para microservicios."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "microservicios",
+      "justificacion": "Aprenderás a diseñar arquitecturas escalables basadas en servicios desacoplados."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "mensajeria",
+      "justificacion": "Facilita la comunicación asíncrona y eficiente entre los diferentes microservicios."
+    }
+  ],
+  "meta": {
+    "intentos": 1,
+    "valido": true,
+    "tiempoMs": 1155,
+    "reglasFalladas": []
+  }
+}

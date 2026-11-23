@@ -1,0 +1,67 @@
+{
+  "roadmap": [
+    {
+      "orden": 1,
+      "habilidad_id": "java_basico",
+      "justificacion": "Necesario dominar los fundamentos de Java como base previa para el desarrollo backend orientado a nube."
+    },
+    {
+      "orden": 2,
+      "habilidad_id": "poo",
+      "justificacion": "Es fundamental comprender la programación orientada a objetos para estructurar aplicaciones robustas."
+    },
+    {
+      "orden": 3,
+      "habilidad_id": "spring_boot",
+      "justificacion": "Framework principal para construir servicios backend de forma rápida y escalable."
+    },
+    {
+      "orden": 4,
+      "habilidad_id": "http_rest_conceptos",
+      "justificacion": "Comprender los protocolos de comunicación web es esencial para arquitecturas conectadas."
+    },
+    {
+      "orden": 5,
+      "habilidad_id": "apis_rest",
+      "justificacion": "Permite exponer servicios que consumirán las aplicaciones en la nube."
+    },
+    {
+      "orden": 6,
+      "habilidad_id": "microservicios",
+      "justificacion": "Permite diseñar arquitecturas distribuidas y escalables."
+    },
+    {
+      "orden": 7,
+      "habilidad_id": "testing_unitario",
+      "justificacion": "Garantiza la calidad del código mediante pruebas automatizadas antes del despliegue."
+    },
+    {
+      "orden": 8,
+      "habilidad_id": "ci_cd",
+      "justificacion": "Automatiza la integración y despliegue continuo de los contenedores hacia la infraestructura."
+    },
+    {
+      "orden": 9,
+      "habilidad_id": "kubernetes",
+      "justificacion": "Orquesta los contenedores Docker para asegurar la escalabilidad en entornos de nube."
+    },
+    {
+      "orden": 10,
+      "habilidad_id": "cloud_basico",
+      "justificacion": "Aporta los fundamentos necesarios para desplegar y operar servicios en entornos cloud."
+    },
+    {
+      "orden": 11,
+      "habilidad_id": "observabilidad",
+      "justificacion": "Permite monitorear, registrar y trazar el comportamiento de los microservicios en producción."
+    }
+  ],
+  "meta": {
+    "intentos": 2,
+    "valido": true,
+    "tiempoMs": 3005,
+    "reglasFalladas": [
+      "R6"
+    ]
+  }
+}
